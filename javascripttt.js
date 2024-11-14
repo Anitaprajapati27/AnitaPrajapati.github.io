@@ -39,6 +39,7 @@ function updateCart() {
 
 // Function to handle adding a dessert to the cart
 function addToCart(dessert) {
+    console.log('Adding to cart:', dessert); // Debug line
     const existingDessert = cart.find(item => item.id === dessert.id);
     if (existingDessert) {
         existingDessert.quantity++;
@@ -83,7 +84,10 @@ function showOrderPlacedMessage() {
 
     // Make the message visible, then hide it after a few seconds
     setTimeout(() => orderMessage.classList.add('show'), 10);
-    setTimeout(() => orderMessage.classList.remove('show'), 3000);
+    setTimeout(() => {
+        orderMessage.classList.remove('show');
+        orderMessage.remove(); // Remove the element after hiding
+    }, 3000);
 }
 
 // Example function to add a dessert to the cart (you can link this with buttons in the dessert items)
@@ -91,12 +95,7 @@ function createDessert(id, name, price, imageSrc) {
     return { id, name, price, imageSrc };
 }
 
-// Example dessert data to add to the cart
-const chocolateDessert = createDessert(1, 'Chocolate Cake', 350, 'chocolate-cake.jpg');
-const cakeDessert = createDessert(2, 'Vanilla Cake', 450, 'vanilla-cake.jpg');
-const sweetDessert = createDessert(3, 'Gulab Jamun', 100, 'gulab-jamun.jpg');
-
-// Example: Automatically adding some desserts to the cart for testing
-addToCart(chocolateDessert);
-addToCart(cakeDessert);
-addToCart(sweetDessert);
+// Initialize the cart display on page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateCart();
+});
