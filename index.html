@@ -16,7 +16,7 @@
         <a href="#menu">Menu</a>
         <a href="#about">About</a>
         <a href="#contact">Contact Us</a>
-        <a href="#cart">View Cart</a> <!-- Link to cart section -->
+        <a href="#cart">View Cart</a>
     </nav>
 
     <section id="menu" class="container">
@@ -24,125 +24,121 @@
 
         <div class="category">
             <h3>Chocolates</h3>
-            <p>________________________________________________________________________________________________________________________</p>
             <div class="dessert-item">
                 <img src="darkchocolate.jpg" alt="Dark Chocolate Truffle">
                 <h4>Dark Chocolate Truffle</h4>
                 <p>₹230</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(1, 'Dark Chocolate Truffle', 230, 'darkchocolate.jpg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="chocolate.jpeg" alt="Milk Chocolate Bar">
                 <h4>Milk Chocolate Bar</h4>
                 <p>₹150</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(2, 'Milk Chocolate Bar', 150, 'chocolate.jpeg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
-                <img src="assorted.webp" alt="Assorted Chocolates">
+                <img src="assorted.jpeg" alt="Assorted Chocolates">
                 <h4>Assorted Chocolates</h4>
                 <p>₹250</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(3, 'Assorted Chocolates', 250, 'assorted.jpeg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="hazelnut.jpeg" alt="Hazelnut Chocolate">
-
                 <h4>Hazelnut Chocolate</h4>
                 <p>₹270</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(4, 'Hazelnut Chocolate', 270, 'hazelnut.jpeg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="whitechocolate.jpg" alt="White Chocolate">
                 <h4>White Chocolate</h4>
                 <p>₹290</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(5, 'White Chocolate', 290, 'whitechocolate.jpg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="mintchoco.jpg" alt="Mint Chocolate">
                 <h4>Mint Chocolate</h4>
                 <p>₹310</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(6, 'Mint Chocolate', 310, 'mintchoco.jpg'))">Add to Cart</button>
             </div>
         </div>
 
         <div class="category">
             <h3>Cakes</h3>
-            <p>________________________________________________________________________________________________________________________</p>
             <div class="dessert-item">
                 <img src="chococake.jpg" alt="Chocolate Cake">
                 <h4>Chocolate Cake</h4>
                 <p>₹430</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(7, 'Chocolate Cake', 430, 'chococake.jpg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
-                <img src="strawcake.webp" alt="Strawberry Cheesecake">
+                <img src="strawberrycake.jpg" alt="Strawberry Cheesecake">
                 <h4>Strawberry Cheesecake</h4>
                 <p>₹400</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(8, 'Strawberry Cheesecake', 400, 'strawberrycake.jpg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="lemoncake.jpg" alt="Lemon Cake">
                 <h4>Lemon Cake</h4>
                 <p>₹470</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(9, 'Lemon Cake', 470, 'lemoncake.jpg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="redvelvet.jpeg" alt="Red Velvet Cake">
                 <h4>Red Velvet Cake</h4>
                 <p>₹650</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(10, 'Red Velvet Cake', 650, 'redvelvet.jpeg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="chocofudge.jpg" alt="Chocolate Fudge Cake">
                 <h4>Chocolate Fudge Cake</h4>
                 <p>₹330</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(11, 'Chocolate Fudge Cake', 330, 'chocofudge.jpg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="fruitcake.jpeg" alt="Fruit Cake">
                 <h4>Fruit Cake</h4>
                 <p>₹550</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(12, 'Fruit Cake', 550, 'fruitcake.jpeg'))">Add to Cart</button>
             </div>
         </div>
 
         <div class="category">
             <h3>Sweets</h3>
-            <p>________________________________________________________________________________________________________________________</p>
             <div class="dessert-item">
                 <img src="macarons.jpg" alt="Macarons">
                 <h4>Macarons</h4>
                 <p>₹360</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(13, 'Macarons', 360, 'macarons.jpg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="lemontart.jpeg" alt="Lemon Tart">
                 <h4>Lemon Tart</h4>
                 <p>₹550</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(14, 'Lemon Tart', 550, 'lemontart.jpeg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="marshwallos.jpg" alt="Marshmallows">
                 <h4>Marshmallows</h4>
                 <p>₹250</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(15, 'Marshmallows', 250, 'marshmallows.jpg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="gingerbread.jpeg" alt="Gingerbread Cookies">
                 <h4>Gingerbread Cookies</h4>
                 <p>₹400</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(16, 'Gingerbread Cookies', 400, 'gingerbread.jpeg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
-                <img src="baklava.webp" alt="Baklava">
+                <img src="backlava.jpeg" alt="Baklava">
                 <h4>Baklava</h4>
                 <p>₹460</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(17, 'Baklava', 460, 'baklava.jpeg'))">Add to Cart</button>
             </div>
             <div class="dessert-item">
                 <img src="noughat.jpeg" alt="Nougat">
                 <h4>Nougat</h4>
                 <p>₹670</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(createDessert(18, 'Nougat', 670, 'nougat.jpeg'))">Add to Cart</button>
             </div>
         </div>
     </section>
@@ -150,14 +146,10 @@
     <!-- Cart Section -->
     <section id="cart" class="container">
         <h2>Your Cart</h2>
-        <div id="cart-items">
-            <!-- Cart items will be displayed here -->
-        </div>
+        <div id="cart-items"></div>
         <p id="total-price">Total: ₹0.00</p>
         <div id="checkout-message"></div>
-
-<!-- Your Checkout Button -->
-<button id="checkout-btn" disabled>Checkout</button>
+        <button id="checkout-btn" disabled>Checkout</button>
     </section>
 
     <section id="about" class="container">
@@ -165,7 +157,6 @@
         <p>Welcome to <strong>Desserts Delight</strong>, where every dessert is a work of art! We believe that a great dessert can bring joy to any moment, whether it's a celebration or just a sweet treat after a long day. Our desserts are crafted with love, using only the finest ingredients to create flavors that will delight your senses.</p>
         <p>At <strong>Desserts Delight</strong>, we're not just making desserts – we're creating memories. Come indulge and experience the joy of sweets made just for you.</p>
     </section>
-    
 
     <section id="contact" class="container">
         <h2>Contact Us</h2>
@@ -175,10 +166,9 @@
     </section>
 
     <footer>
-        &copy; 2024 Desserts Delight. 
+        &copy; 2024 Desserts Delight.
         <p>Made by <strong>Anita Prajapati</strong> with ♥️.</p>
     </footer>
     <script src="javascripttt.js"></script>
-
-
-    </body>
+</body>
+</html>
